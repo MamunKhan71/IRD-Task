@@ -1,3 +1,4 @@
+import PlayIcon from '@/components/Icons/PlayIcon';
 import React, { useState, useRef } from 'react';
 const PlayAudio = ({ content }) => {
     const [isPlaying, setIsPlaying] = useState(false);
@@ -25,12 +26,9 @@ const PlayAudio = ({ content }) => {
                 <audio ref={audioRef} src={content.audio}></audio>
             )}
             {content.audio && (
-                <img
-                    src="play.svg"
-                    alt=""
-                    onClick={togglePlay}
-                    className="cursor-pointer"
-                />
+                <button onClick={() => togglePlay()}>
+                    <PlayIcon />
+                </button>
             )}
         </div>
     );

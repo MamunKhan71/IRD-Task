@@ -3,6 +3,8 @@ import localFont from "next/font/local";
 import { Inter, Poppins } from 'next/font/google'
 import "./globals.css";
 import ClientLayout from "@/components/ClientLayout";
+import { Bounce, ToastContainer } from "react-toastify";
+import TikMarkIcon from "@/components/Icons/TikMarkIcon";
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
@@ -40,6 +42,21 @@ export default function RootLayout({
             {children}
           </div>
         </ClientLayout>
+        <ToastContainer
+          icon={<TikMarkIcon />}
+          position="bottom-center"
+          autoClose={3000}
+          hideProgressBar={true}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme="dark"
+          className={'text-white'}
+          transition={Bounce}
+        />
       </body>
     </html>
   );

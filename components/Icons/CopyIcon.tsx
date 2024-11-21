@@ -1,8 +1,14 @@
 import React from 'react'
+import { toast } from 'react-toastify'
 
-const CopyIcon = () => {
+const CopyIcon = ({ content }) => {
     return (
         <svg
+            className='hover:cursor-pointer'
+            onClick={() => <>
+                {navigator.clipboard.writeText(`${content.dua_name_en}\n ${content.top_en}\n${content.clean_arabic ? content.clean_arabic : ""}\n${content.transliteration_en ? content.transliteration_en : ""}\n${content.translation_en ? content.translation_en : ""}\n`)}
+                {toast.success("Copied")}
+            </>}
             xmlns="http://www.w3.org/2000/svg"
             width={24}
             height={24}

@@ -5,7 +5,6 @@
 ::-webkit-scrollbar {
     width: 6px; 
     height: 6px;
-    padding-left: 6px; 
   }
   
   ::-webkit-scrollbar-track {
@@ -17,7 +16,7 @@
   }
   
   ::-webkit-scrollbar-thumb:hover {
-    background: #555; 
+    background: #808080; 
   }
 :root{
     background-color: #F7F8FA;

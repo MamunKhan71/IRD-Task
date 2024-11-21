@@ -1,8 +1,12 @@
+"use client"
 import React from 'react'
+import { toast } from 'react-toastify'
 
 const BulbIcon = () => {
     return (
         <svg
+            onClick={() => toast.success("Coming Soon In Sha Allah")}
+            className='hover:cursor-pointer'
             xmlns="http://www.w3.org/2000/svg"
             width={20}
             height={21}

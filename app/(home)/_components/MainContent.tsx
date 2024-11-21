@@ -1,7 +1,7 @@
 "use client"
 import { useEffect } from "react";
 import PropTypes from 'prop-types';
-import { ToastContainer, toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useState } from "react";
 import PlayAudio from "./PlayAudio";
@@ -67,7 +67,7 @@ const MainContent = ({ currentCat }) => {
                                     }
                                 </div>
                                 <div className="flex gap-10">
-                                    <CopyIcon />
+                                    <CopyIcon content={content} />
                                     <BookmarkIcon />
                                     <BulbIcon />
                                     <ShareIcon />

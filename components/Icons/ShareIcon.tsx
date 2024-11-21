@@ -1,8 +1,11 @@
 import React from 'react'
+import { toast } from 'react-toastify'
 
 const ShareIcon = () => {
     return (
         <svg
+            onClick={() => toast("Coming Soon In Sha Allah")}
+            className='hover:cursor-pointer'
             xmlns="http://www.w3.org/2000/svg"
             width={24}
             height={24}
