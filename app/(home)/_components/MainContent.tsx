@@ -19,7 +19,7 @@ const MainContent = ({ currentCat }) => {
     }, [])
 
     return (
-        <div className="col-span-2 space-y-4 font-inter h-[85.5vh] overflow-y-scroll pr-2 rounded-2xl dark:bg-dark-bg xs:h-screen sm:h-screen lg:h-[74vh] w-full">
+        <div className="col-span-2 space-y-4 font-inter h-[85.5vh] overflow-y-scroll pr-2 rounded-2xl dark:bg-dark-bg xs:h-screen sm:h-screen lg:h-[82vh] w-full">
             <div className="bg-white p-4 font-medium w-full rounded-lg">
                 <p className="w-full"><span className="text-[#1FA45B]">Section</span> The Servant dependent on his lord</p>
             </div>

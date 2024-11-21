@@ -2,6 +2,7 @@
 import Categories from "@/components/Categories";
 import { useState } from "react";
 import MainContent from "./_components/MainContent";
+import Sidebar from "./_components/Sidebar";
 
 export default function Home() {
   const [currentCat, setCurrentCat] = useState(1);
@@ -18,6 +19,7 @@ export default function Home() {
     <div className="grid grid-cols-4 gap-8">
       <Categories catShow={catShow}></Categories>
       <MainContent currentCat={currentCat} />
+      <Sidebar />
     </div>
   );
 }
