@@ -6,7 +6,6 @@ const ClientLayout = ({ children }) => {
         <div className='p-10 min-w-[1840px]'>
             <Navbar />
             {children}
-            Footer
         </div>
     )
 }
