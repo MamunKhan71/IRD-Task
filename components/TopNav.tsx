@@ -11,7 +11,7 @@ const TopNav = () => {
                         <input
                             type="search"
                             id="default-search"
-                            className="block w-full p-4 text-sm "
+                            className="block w-full p-4 text-base "
                             placeholder="Search by Dua Name"
                         />
                         <button
