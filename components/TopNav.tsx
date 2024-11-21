@@ -3,11 +3,13 @@ import SearchIcon from "./Icons/SearchIcon";
 
 const TopNav = () => {
     return (
-        <div className="font-inter w-full flex flex-col-reverse lg:flex-row gap-2 lg:gap-0 justify-center lg:justify-between items-end lg:items-center px-4 lg:px-0">
-            <h1 className="text-2xl font-poppins font-semibold w-full text-center lg:text-left lg:max-w-96">Dua Page</h1>
-            <div className="w-full lg:w-[620px]">
-                <div className="flex justify-end w-full">
-                    <div className="relative w-[371px] border rounded-[10px]  overflow-hidden border-[#E2E2E2]">
+        <div className="font-inter w-full grid grid-cols-4">
+            <div className="w-full col-span-3 flex items-center justify-between pr-2">
+                <div>
+                    <h1 className="text-2xl font-poppins font-semibold w-full text-center lg:text-left ">Dua Page</h1>
+                </div>
+                <div className="flex justify-end ">
+                    <div className="relative w-[371px] border rounded-[10px] overflow-hidden border-[#E2E2E2]">
                         <input
                             type="search"
                             id="default-search"
@@ -23,7 +25,7 @@ const TopNav = () => {
                     </div>
                 </div>
             </div>
-            <div className="flex gap-4 items-center">
+            <div className="flex gap-4 items-center justify-end">
                 <ProfileIcon />
                 <svg xmlns="http://www.w3.org/2000/svg" width="10" height="7" viewBox="0 0 10 7" fill="none">
                     <path d="M5.79241 5.97063C5.3921 6.49064 4.6079 6.49064 4.20759 5.97063L1.04322 1.85999C0.537025 1.20243 1.00579 0.25 1.83563 0.25L8.16437 0.250001C8.99421 0.250001 9.46298 1.20243 8.95678 1.86L5.79241 5.97063Z" fill="#868686" />

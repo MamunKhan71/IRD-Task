@@ -12,7 +12,7 @@ import Image from 'next/image'
 
 const Navbar = () => {
   return (
-    <div className="font-inter h-full w-[100px]">
+    <div className="font-inter w-[100px] rounded-2xl h-[92vh]">
       <div className='flex px-3 py-7 gap-7 h-full flex-col items-center justify-between bg-white rounded-xl'>
         <div>
           <Image height={73} width={73} src="https://res.cloudinary.com/dfwmhlhyo/image/upload/v1732172076/lgo_spckqu.png" alt="" />

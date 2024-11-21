@@ -73,7 +73,7 @@ const Categories: React.FC<CategoriesProps> = ({ catShow }) => {
                         </div>
                     </div>
                 </div>
-                <div className="font-inter h-[calc(100vh-32vh)] lg:h-[calc(100vh_-_45.5vh)] 3xl:h-[68vh] overflow-y-scroll">
+                <div className="font-inter h-[calc(100vh-32vh)] pr-2 lg:h-[calc(100vh_-_45.5vh)] 3xl:h-[68vh] overflow-y-scroll">
                     <div className="bg-white rounded-xl flex flex-col font-inter">
                         <div className="space-y-4">
                             {category.map((cat) => (
