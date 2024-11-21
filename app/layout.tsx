@@ -36,7 +36,7 @@ export default function RootLayout({
         className={`${inter.variable} ${meQuranFont.variable} ${poppins.variable} antialiased`}
       >
         <ClientLayout>
-          <div className="w-full">
+          <div className="w-full ">
             {children}
           </div>
         </ClientLayout>

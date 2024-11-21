@@ -1,13 +1,13 @@
 "use client"
 import Categories from "@/components/Categories";
-import Navbar from "@/components/Navbar";
 import { useState } from "react";
+import MainContent from "./_components/MainContent";
 
 export default function Home() {
   const [currentCat, setCurrentCat] = useState(1);
   const [getDoa, setDoa] = useState([]);
 
-  const handleDoa = doa =>{
+  const handleDoa = doa => {
     setDoa(doa);
   }
 
@@ -17,6 +17,7 @@ export default function Home() {
   return (
     <div className="grid grid-cols-4 gap-8">
       <Categories catShow={catShow}></Categories>
+      <MainContent currentCat={currentCat} />
     </div>
   );
 }

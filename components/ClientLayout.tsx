@@ -4,10 +4,10 @@ import TopNav from './TopNav'
 
 const ClientLayout = ({ children }) => {
     return (
-        <div className='p-10 min-w-[1840px]'>
-            <TopNav />
-            <div className='flex items-start gap-[30px] w-full'>
-                <Navbar />
+        <div className='p-10 min-w-[1840px] flex gap-8'>
+            <Navbar />
+            <div className='space-y-8'>
+                <TopNav />
                 {/* <TopNav /> */}
                 {children}
             </div>
